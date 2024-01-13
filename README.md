@@ -29,4 +29,4 @@ Reinstallation:
 - Do not run on real systems with important data.
 
 ### User Consent
-By using this driver, you agree that the author is not responsible for potential consequences, including data loss. Use at your own risk.
+By using this driver, you agree that the author is not responsible for potential consequences, including data loss. Use at your own risk. Driver cannot be used in a malicious actions to harm someone's computer
