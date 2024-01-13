@@ -10,46 +10,44 @@ This driver and control panel are intended for testing and debugging purposes. T
 - Use only for testing and debugging purposes.
 
 ### Instructions
-1. Installation:
- - Run control_panel.bat and choose the "Install driver" option.
+1. **Installation**:
+ - Run **control_panel.bat** and choose the "**Install driver**" option.
  - Ensure that you are in a testing environment.
 
-2. Activation:
- - Run control_panel.bat and choose the "Activate (crash system)" option.
+2. **Activation**:
+ - Run **control_panel.bat** and choose the "**Activate (crash system)**" option.
 
-3. Uninstallation:
- - Run control_panel.bat and choose the "Uninstall driver" option.
+3. **Uninstallation**:
+ - Run **control_panel.bat** and choose the "**Uninstall driver**" option.
 
 ### Additional Options
-Reinstallation:
- - Run control_panel.bat and choose the "Reinstall driver" option.
+**Reinstallation**:
+ - Run **control_panel.bat** and choose the "**Reinstall driver**" option.
 
 ### Manual install
 If you encounter issues with the Control Panel or prefer manual installation, you can use the `sc` command to install the driver.
 
-Install:
-1. Open a Command Prompt with administrative privileges.
-2. Navigate to the directory containing the driver file (e.g., bsod.sys).
+**Install**:
+1. Open a **Command Prompt** with administrative privileges.
+2. Navigate to the directory containing the driver file (e.g., *bsod.sys*).
 3. Run the following command to create the service:
    `sc create bsod binpath= "%cd%\bsod.sys" type= kernel`
 4. If you get an error that service already exist, execute this command:
    `sc delete bsod`
    Then try step 3 again
    
-Activation:
+**Activation**:
+Upon start, the driver executes a function that triggers an *unstoppable* BSOD. **Use with extreme caution**.
 1. Once the service is created, you can start it with the following command:
    `sc start bsod`
 
-Uninstall:
+**Uninstall**:
 1. To uninstall the driver, use the following command:
    `sc delete bsod`
 
-
-
-
 ### Warning
-- Use only for testing and debugging purposes.
+- Use only for **testing and debugging purposes**.
 - Do not run on real systems with important data.
 
 ### User Consent
-By using this driver, you agree that the author is not responsible for potential consequences, including data loss. Use at your own risk. Driver cannot be used in a malicious actions to harm someone's computer
+By using this driver, you agree that the author **is not responsible** for potential consequences, including data loss. Use at your own **risk**. Driver cannot be used in a malicious actions to harm someone's computer
