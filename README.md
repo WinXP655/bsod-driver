@@ -2,7 +2,7 @@
 A driver that call BSOD with code 0x00000000(STATUS_SUCCESS)
 
 ## BSOD Driver & Control Panel
-This driver and control panel are intended for testing and debugging purposes. The driver triggers a blue screen with the **STATUS_SUCCESS** error code (*0x00000000*). The control panel facilitates easy installation, activation, and removal of the driver.
+This driver and control panel are intended for testing and debugging purposes. The driver triggers a blue screen with the **STATUS_SUCCESS** error code (*0x00000000*). The control panel facilitates easy installation, activation, and removal of the driver. Driver need x64 version of Windows XP and higher
 
 ### Warning
 - Not recommended for use on real systems.
