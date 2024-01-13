@@ -35,5 +35,13 @@ Upon start, the driver executes a function that triggers an *unstoppable* BSOD. 
    OR
    Delete **bsod.sys** if you don't need it
 
+**Reinstall**
+1. Open a **Command Prompt** with administrative privileges.
+2. Navigate to the directory containing the driver file (e.g., *bsod.sys*).
+3. Delete driver:
+   `sc delete bsod`
+4. Install driver:
+   `sc create bsod binpath= "%cd%\bsod.sys" type= kernel`
+
 ### User Consent
 By using this driver, you agree that the author **is not responsible** for potential consequences, including data loss. Use at your own **risk**. Driver cannot be used in a malicious actions to harm someone's computer
