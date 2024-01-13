@@ -32,6 +32,9 @@ Install:
 2. Navigate to the directory containing the driver file (e.g., bsod.sys).
 3. Run the following command to create the service:
    `sc create bsod binpath= "%cd%\bsod.sys" type= kernel`
+4. If you get an error that service already exist, execute this command:
+   `sc delete bsod`
+   Then try step 3 again
    
 Activation:
 1. Once the service is created, you can start it with the following command:
