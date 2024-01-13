@@ -24,6 +24,26 @@ This driver and control panel are intended for testing and debugging purposes. T
 Reinstallation:
  - Run control_panel.bat and choose the "Reinstall driver" option.
 
+### Manual install
+If you encounter issues with the Control Panel or prefer manual installation, you can use the `sc` command to install the driver.
+
+Install:
+1. Open a Command Prompt with administrative privileges.
+2. Navigate to the directory containing the driver file (e.g., bsod.sys).
+3. Run the following command to create the service:
+   `sc create bsod binpath= "%cd%\bsod.sys" type= kernel`
+   
+Activation:
+1. Once the service is created, you can start it with the following command:
+   `sc start bsod`
+
+Uninstall:
+1. To uninstall the driver, use the following command:
+   `sc delete bsod`
+
+
+
+
 ### Warning
 - Use only for testing and debugging purposes.
 - Do not run on real systems with important data.
